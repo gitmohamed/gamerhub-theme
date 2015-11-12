@@ -1,0 +1,328 @@
+
+/* ================================= Gamer Hub Styles ================================= */
+
+
+
+/* ================================= TAXONOMY ================================= */
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Titillium Web', sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+* {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	display: block;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	margin: 0;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+textarea {
+	max-width: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.red {
+	color: #FB2F2F;
+}
+
+/* ============================= MAIN ============================= */
+
+.header {
+    width: 100%;
+    padding: 5px 40px;
+    top: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    position: fixed;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.58);
+}
+
+.brand {
+	display: block;
+	float: left;
+	margin: 10px 0;
+}
+
+.main-menu {
+	float: right;
+	width: auto;
+	margin: 10px 0;
+	font-weight: bold;
+	color: rgb(35, 35, 35);
+}
+
+.main-menu li {
+	float: left;
+	margin-left: 15px;
+}
+
+.main {
+	/*padding: 0 30px;*/
+	background: whitesmoke;
+	margin-top: 57px;
+}
+
+.hero {
+    width: 100%;
+    height: 400px;
+    background: url(img/7DF5CC19A6.jpg) center no-repeat;
+    background-size: cover;
+    background-position-y: 0;
+}
+
+.headline-overlay {
+    color: white;
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 400px;
+}
+
+.headline-overlay h1 {
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 220px;
+	font-size: 35px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.content {
+	width: 70%;
+	float: left;
+	display: block;
+    padding: 10px 20px;
+	/*box-shadow: 0 0 5px #ccc;*/
+}
+
+.post-body {
+	padding: 20px;
+	width: 100%;
+	margin: 20px auto;
+	background: white;
+	box-shadow: 0 0 3px rgb(212, 212, 212);
+}
+
+.title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+	margin: 10px 0;
+}
+
+.post-title {
+	font-size: 30px;
+}
+
+.post-meta {
+	color: darkgrey;
+}
+
+.post-excerpt {
+	font-size: 25px;
+}
+
+.featured-image {
+	width: 100%;
+	height: auto;
+}
+
+.sidebar {
+	width: 30%;
+	float: left;
+	padding: 20px;
+}
+
+.widgets {
+	padding: 20px;
+	width: 90%;
+	margin: 10px auto;
+	background: white;
+	box-shadow: 0 0 3px rgb(212, 212, 212);
+}
+
+.w-title {
+	font-size: 22px;
+}
+
+.copy {
+    width: 50%;
+    float: left;
+}
+
+.footer {
+	width: 100%;
+	background: #111;
+	padding: 10px 30px;
+	display: inline-block;
+	color: whitesmoke;
+}
+
+.footer-menu {
+    display: block;
+    float: right;
+}
+
+.footer-menu li {
+	float: left;
+	margin-left: 10px;
+}
+
+#contactModal {
+	display: none;
+	background: white;
+	border: 1px solid #ddd;
+	position: fixed;
+	/*opacity: 0;*/
+	padding: 30px;
+	width: 60%;
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: auto;
+	z-index: 99;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+}
+
+#contactModal input, #contactModal textarea {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: inset 0 0 3px #ddd;
+	margin: 10px auto;
+	outline: none;
+}
+
+#contactModal input {
+	height: 40px;
+}
+
+#contactModal textarea {
+	height: 200px;
+}
+
+.dark-overlay {
+	display: none;
+	top: 0vh;
+	/*opacity: 0;*/
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,0.4);
+	z-index: 98;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+}
+
+
+
+/* =================================== LOADING SPINNER =================================== */
+.load-overlay {
+    display: block;
+    background: rgba(0,0,0,1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+#spinner.active {
+    display: block;
+}
+#spinner {
+    display: none;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 40%;
+    left: 48%;
+    z-index: 1;
+}
+.spinner_ball {
+    position: absolute;
+    display: block;
+    background: white;
+    left: 24px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+#ball_1 {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.3, 0.9, 0.9);
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 6px 30px;
+}
+#ball_2 {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.5, 0.9, 0.9);
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 6px 30px;
+}
+
+#ball_3 {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.7, 0.9, 0.9);
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 6px 30px;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+  }
+  100% { 
+    -webkit-transform: rotate(1440deg) scale(1); 
+  }
+}
